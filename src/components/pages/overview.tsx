@@ -37,7 +37,7 @@ export default function OverviewPage({ data }: OverviewPageProps) {
     <div className="p-8 space-y-8">
       {/* KPI Cards */}
       <div className="grid grid-cols-3 gap-4">
-        <KPICard label="총 판매자" value={kpis.totalSellers} />
+        <KPICard label="총 판매자4" value={kpis.totalSellers} />
         <KPICard label="총 매출" value={`$${(kpis.totalRevenue / 1000000).toFixed(1)}M`} />
         <KPICard label="평균 팔로워" value={Math.round(kpis.avgFollowers / 1000)} suffix="K" />
         <KPICard label="평균 호응율" value={kpis.avgEngagement} />
